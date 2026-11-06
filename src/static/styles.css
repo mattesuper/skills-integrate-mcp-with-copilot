@@ -16,12 +16,60 @@ body {
 }
 
 header {
+  position: relative;
   text-align: center;
   padding: 20px 0;
   margin-bottom: 30px;
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+}
+
+.account-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 0 15px 15px;
+}
+
+.account-controls button {
+  border: 1px solid white;
+}
+
+dialog {
+  margin: auto;
+  padding: 24px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: min(400px, 90vw);
+}
+
+dialog::backdrop {
+  background: rgb(0 0 0 / 45%);
+}
+
+#login-error {
+  color: #c62828;
+  margin-bottom: 12px;
+}
+
+.pending-requests {
+  margin-top: 15px;
+}
+
+.pending-requests li {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px 0;
+  overflow-wrap: anywhere;
+}
+
+.participant-email {
+  overflow-wrap: anywhere;
+  min-width: 0;
 }
 
 header h1 {
